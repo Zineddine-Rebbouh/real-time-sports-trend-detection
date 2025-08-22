@@ -1,0 +1,243 @@
+# Tendances Sportives - Full Stack Project .gitignore
+
+# ====================
+# FRONTEND (Next.js)
+# ====================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Production build
+frontend/build/
+frontend/dist/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Vercel
+frontend/.vercel
+
+# Typescript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# IDE files
+frontend/.vscode/
+frontend/.idea/
+
+# OS files
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# ====================
+# BACKEND (Django)
+# ====================
+
+# Python
+server/__pycache__/
+server/*.py[cod]
+server/*$py.class
+server/*.so
+server/.Python
+server/build/
+server/develop-eggs/
+server/dist/
+server/downloads/
+server/eggs/
+server/.eggs/
+server/lib/
+server/lib64/
+server/parts/
+server/sdist/
+server/var/
+server/wheels/
+server/*.egg-info/
+server/.installed.cfg
+server/*.egg
+server/MANIFEST
+
+# Virtual Environment
+server/venv/
+server/env/
+server/ENV/
+server/env.bak/
+server/venv.bak/
+server/.venv/
+
+# Django
+server/db.sqlite3
+server/db.sqlite3-journal
+server/media/
+server/staticfiles/
+server/static/
+
+# Environment variables
+server/.env
+server/.env.local
+server/.env.development
+server/.env.production
+
+# Celery
+server/celerybeat-schedule*
+server/celery.pid
+
+# Django migrations (keep initial migrations, ignore others)
+server/*/migrations/0*.py
+server/*/migrations/__pycache__/
+
+# Django secret key and sensitive config
+server/config/settings/local.py
+server/config/settings/secrets.py
+
+# Logs
+server/*.log
+server/logs/
+
+# Testing
+server/.coverage
+server/htmlcov/
+server/.pytest_cache/
+server/.tox/
+
+# IDE files
+server/.vscode/
+server/.idea/
+server/*.swp
+server/*.swo
+
+# ====================
+# AI/ML MODELS
+# ====================
+
+# Model files (typically large)
+server/models/*/pytorch_model.bin
+server/models/*/tf_model.h5
+server/models/*/model.safetensors
+server/models/*/*.bin
+server/models/*/*.pt
+server/models/*/*.pth
+
+# Model cache
+server/models/cache/
+server/.cache/
+
+# Hugging Face cache
+server/.cache/huggingface/
+
+# ====================
+# DATA & CREDENTIALS
+# ====================
+
+# Sensitive data files
+*.key
+*.pem
+*.p12
+*.pfx
+server/data/raw/
+server/data/processed/
+server/backups/
+
+# API keys and credentials
+.env
+.env.*
+!.env.example
+config.json
+secrets.json
+
+# ====================
+# DEVELOPMENT & TOOLS
+# ====================
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Redis dump
+dump.rdb
+
+# MongoDB
+*.lock
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ====================
+# DOCUMENTATION
+# ====================
+
+# Documentation builds
+docs/_build/
+docs/build/
+
+# ====================
+# PACKAGE MANAGERS
+# ====================
+
+# npm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ====================
+# DEPLOYMENT
+# ====================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+k8s/secrets/
+
+# Cloud deployment
+.gcloudignore
+.aws/
+
+# ====================
+# MONITORING & ANALYTICS
+# ====================
+
+# Error tracking
+.sentry-cli
+
+# Analytics
+.analytics/
+
+# Performance monitoring
+.profiling/
