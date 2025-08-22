@@ -54,8 +54,8 @@ This is a full-stack application with a clear separation between frontend and ba
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Zineddine-Rebbouh/back-end-web-app.git
-cd back-end-web-app
+git clone https://github.com/Zineddine-Rebbouh/real-time-sports-trend-detection.git
+cd real-time-sports-trend-detection
 ```
 
 ### 2. Backend Setup
@@ -97,14 +97,14 @@ python manage.py runserver
 cd frontend
 
 # Install dependencies
-pnpm install
+npm install
 
 # Set up environment variables
 cp .env.example .env.local
 # Edit .env.local with your configurations
 
 # Start development server
-pnpm dev
+npm run dev
 ```
 
 ### 4. Start Background Services
